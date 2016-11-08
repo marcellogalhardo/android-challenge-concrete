@@ -1,4 +1,4 @@
-# Concrete Sollutions - Android Challenge.
+# Android Challenge desenvolvido para a Concrete Solutions.
 
 Os detalhes sobre o desafio original podem ser encontrados neste [link](https://bitbucket.org/marcellogalhardo/concrete-sollutions-android-challenge/src/3c4d761e4886a32a78f14e8fee844e1d57890730/ORIGINAL_README.md?at=master&fileviewer=file-view-default).
 

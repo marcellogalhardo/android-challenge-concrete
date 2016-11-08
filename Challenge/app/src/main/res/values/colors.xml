@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <!-- System Palette -->
+  <color name="colorPrimary">@color/warm_black</color>
+  <color name="colorPrimaryDark">@color/warm_black</color>
+  <color name="colorAccent">@color/yellow</color>
+  <color name="divider">@color/white_grey</color>
+
+  <!-- Color Palette -->
+  <color name="warm_black">#343438</color>
+  <color name="blue">#3e77aa</color>
+  <color name="blue_water">#3f89d6</color>
+  <color name="yellow">#e19405</color>
+  <color name="warm_yellow">#e0930d</color>
+  <color name="grey">#bac3c3</color>
+  <color name="white_grey">#e1e1e1</color>
+  <color name="warm_grey">#f0f0f0</color>
+</resources>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="?attr/selectableItemBackground"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/margin_default"
+    android:paddingRight="@dimen/margin_default"
+    android:paddingTop="@dimen/margin_default"
+    >
+
+  <LinearLayout
+      android:id="@+id/container_repository"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentLeft="true"
+      android:layout_alignParentStart="true"
+      android:layout_marginEnd="@dimen/margin_default"
+      android:layout_marginRight="@dimen/margin_default"
+      android:layout_toLeftOf="@+id/container_user"
+      android:layout_toStartOf="@+id/container_user"
+      android:orientation="vertical"
+      >
+
+    <TextView
+        android:id="@+id/repository_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        tools:text="Nome Repositório"
+        style="@style/AppTheme.RepositoryList.Name"
+        />
+
+    <TextView
+        android:id="@+id/repository_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="2"
+        tools:text="Descrição do Repositório"
+        style="@style/AppTheme.RepositoryList.Description"
+        />
+
+  </LinearLayout>
+
+  <LinearLayout
+      android:id="@+id/container_caption"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/container_repository"
+      android:layout_marginTop="@dimen/margin_default"
+      android:orientation="horizontal"
+      >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/image_code_fork"
+        />
+
+    <TextView
+        android:id="@+id/repository_code_forks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/margin_default"
+        android:layout_marginRight="@dimen/margin_default"
+        tools:text="640"
+        style="@style/AppTheme.RepositoryList.Caption"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/image_star"
+        />
+
+    <TextView
+        android:id="@+id/repository_stars"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="98"
+        style="@style/AppTheme.RepositoryList.Caption"
+        />
+
+  </LinearLayout>
+
+  <LinearLayout
+      android:id="@+id/container_user"
+      android:layout_width="80dp"
+      android:layout_height="wrap_content"
+      android:layout_alignParentEnd="true"
+      android:layout_alignParentRight="true"
+      android:gravity="center"
+      android:orientation="vertical"
+      >
+
+    <ImageView
+        android:id="@+id/user_image"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        app:srcCompat="@drawable/image_user"
+        />
+
+    <TextView
+        android:id="@+id/user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLength="10"
+        tools:text="username"
+        style="@style/AppTheme.RepositoryList.UserName"
+        />
+
+    <TextView
+        android:id="@+id/user_real_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLength="10"
+        tools:text="Nome Sobrenome"
+        style="@style/AppTheme.RepositoryList.RealName"
+        />
+
+  </LinearLayout>
+
+  <View
+      android:layout_width="match_parent"
+      android:layout_height="1dp"
+      android:layout_below="@+id/container_caption"
+      android:layout_marginTop="@dimen/margin_default"
+      android:background="@color/divider"
+      />
+
+</RelativeLayout>

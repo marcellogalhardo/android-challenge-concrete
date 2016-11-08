@@ -1,0 +1,64 @@
+<resources>
+
+  <!-- Base application theme. -->
+  <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <item name="colorPrimary">@color/colorPrimary</item>
+    <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+    <item name="colorAccent">@color/colorAccent</item>
+  </style>
+
+  <!-- Repository list theme. -->
+  <style name="AppTheme.RepositoryList" />
+
+  <style name="AppTheme.RepositoryList.Name" parent="TextAppearance.AppCompat.Title">
+    <item name="android:textColor">@color/blue</item>
+  </style>
+
+  <style name="AppTheme.RepositoryList.Description" parent="TextAppearance.AppCompat.Body1">
+    <item name="android:textColor">@color/warm_black</item>
+  </style>
+
+  <style name="AppTheme.RepositoryList.Caption" parent="TextAppearance.AppCompat.Caption">
+    <item name="android:textColor">@color/yellow</item>
+  </style>
+
+  <style name="AppTheme.RepositoryList.UserName" parent="TextAppearance.AppCompat.Body1">
+    <item name="android:textColor">@color/blue_water</item>
+  </style>
+
+  <style name="AppTheme.RepositoryList.RealName" parent="TextAppearance.AppCompat.Caption">
+    <item name="android:textColor">@color/grey</item>
+  </style>
+
+  <!-- Pull request theme. -->
+  <style name="AppTheme.PullRequestList" />
+
+  <style name="AppTheme.PullRequestList.Title" parent="TextAppearance.AppCompat.Title">
+    <item name="android:textColor">@color/blue</item>
+  </style>
+
+  <style name="AppTheme.PullRequestList.Body" parent="TextAppearance.AppCompat.Body1">
+    <item name="android:textColor">@color/warm_black</item>
+  </style>
+
+  <style name="AppTheme.PullRequestList.UserName" parent="TextAppearance.AppCompat.Body1">
+    <item name="android:textColor">@color/blue_water</item>
+  </style>
+
+  <style name="AppTheme.PullRequestList.RealName" parent="TextAppearance.AppCompat.Caption">
+    <item name="android:textColor">@color/grey</item>
+  </style>
+
+  <style name="AppTheme.PullRequestList.InformationContainer">
+    <item name="android:background">@color/warm_grey</item>
+  </style>
+
+  <style name="AppTheme.PullRequestList.Opened" parent="TextAppearance.AppCompat.Caption">
+    <item name="android:textColor">@color/warm_yellow</item>
+  </style>
+
+  <style name="AppTheme.PullRequestList.Closed" parent="TextAppearance.AppCompat.Caption">
+    <item name="android:textColor">@color/warm_black</item>
+  </style>
+
+</resources>

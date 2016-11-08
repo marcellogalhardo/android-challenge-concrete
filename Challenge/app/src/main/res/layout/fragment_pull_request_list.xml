@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="br.com.marcellogalhardo.challenge.ui.repositorylist.RepositoryListActivity"
+    >
+
+  <LinearLayout
+      android:id="@+id/container_info"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      android:padding="@dimen/margin_default"
+      style="@style/AppTheme.PullRequestList.InformationContainer"
+      >
+
+    <TextView
+        android:id="@+id/opened"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="200 opened"
+        style="@style/AppTheme.PullRequestList.Opened"
+        />
+
+    <TextView
+        android:id="@+id/closed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="/ 800 closed"
+        style="@style/AppTheme.PullRequestList.Closed"
+        />
+
+  </LinearLayout>
+
+  <ViewFlipper
+      android:id="@+id/viewflipper"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_below="@+id/container_info"
+      >
+
+    <RelativeLayout
+        android:id="@+id/content_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+      <android.support.v7.widget.RecyclerView
+          android:id="@+id/repository_list"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          tools:listitem="@layout/item_pull_request_list"
+          />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/error_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_centerInParent="true"
+          android:text="@string/something_goes_wrong"
+          />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/loading_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+      <ProgressBar
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_centerInParent="true"
+          android:indeterminate="true"
+          />
+
+    </RelativeLayout>
+
+  </ViewFlipper>
+
+</RelativeLayout>
